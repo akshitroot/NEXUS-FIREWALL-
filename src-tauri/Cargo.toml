@@ -1,0 +1,25 @@
+[package]
+name = "nexus-firewall"
+version = "0.1.0"
+description = "NEXUS Firewall - Advanced security. Simple control. Enterprise-grade Linux desktop firewall."
+authors = ["NEXUS Security Team"]
+edition = "2021"
+default-run = "nexus-firewall"
+
+[lib]
+name = "nexus_firewall_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tokio = { version = "1", features = ["full", "sync", "rt-multi-thread"], optional = true }
+
+[features]
+default = []
+desktop = []

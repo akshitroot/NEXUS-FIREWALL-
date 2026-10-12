@@ -1,0 +1,6 @@
+{
+  "name": "NEXUS Firewall",
+  "description": "Advanced security. Simple control. Enterprise-grade Linux desktop firewall management interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
